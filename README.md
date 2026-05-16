@@ -6,10 +6,20 @@
 Build and evaluate a Linear Regression model to predict median house prices in California using the California Housing Dataset.
 
 ## Dataset
-- Source: Built-in `sklearn.datasets.fetch_california_housing()`
-- Samples: 20,640
-- Features: 8 (MedInc, HouseAge, AveRooms, etc.)
-- Target: Median House Value (in $100,000s)
+- **Source**: Built-in `sklearn.datasets.fetch_california_housing()`
+- **Number of Samples**: 20,640
+- **Number of Features**: 8
+- **Target Variable**: `MedHouseVal` (Median House Value in $100,000s)
+
+## Features
+- `MedInc` — Median income in block group
+- `HouseAge` — Median house age in block group
+- `AveRooms` — Average number of rooms per household
+- `AveBedrms` — Average number of bedrooms per household
+- `Population` — Block group population
+- `AveOccup` — Average number of household members
+- `Latitude` — Block group latitude
+- `Longitude` — Block group longitude
 
 ## Technologies Used
 - Python 3
@@ -19,25 +29,25 @@ Build and evaluate a Linear Regression model to predict median house prices in C
 - Jupyter Notebook
 
 ## Model Performance
-(Replace these with your actual values after running the notebook)
+- **Mean Absolute Error (MAE)**: 0.5332
+- **Root Mean Square Error (RMSE)**: 0.7456
+- **R² Score**: 0.5758
 
-- **Mean Absolute Error (MAE)**: 0.53
-- **Root Mean Square Error (RMSE)**: 0.74
-- **R² Score**: 0.57
-
-## Key Insights
+## Key Insights from EDA
 - Strong positive correlation between `MedInc` (Median Income) and house price.
-- Linear Regression provides a reasonable baseline model.
+- House location (Latitude & Longitude) also plays an important role.
+- Linear Regression gives a reasonable baseline performance for this dataset.
 
-## How to Run
-1. Open `California_Housing_Linear_Regression.ipynb`
+## Project Files
+- `California_Housing_Linear_Regression.ipynb` → Complete Jupyter Notebook (EDA + Model + Visualizations)
+- `california_housing_model.pkl` → Trained Linear Regression model
+- `Report.pdf` → Project Presentation Slides
+
+## How to Run the Project
+1. Open `California_Housing_Linear_Regression.ipynb` in Jupyter Notebook
 2. Run all cells
-3. Model file: `california_housing_model.pkl`
-
-## Files in Repository
-- `California_Housing_Linear_Regression.ipynb` → Complete code + EDA + visualizations
-- `california_housing_model.pkl` → Trained model
-- `Report.pdf` → Project slides
+3. The model will be trained and evaluated automatically
 
 ---
-**Completed as per Task Requirements**
+**Completed as per Task Requirements**  
+Submitted for: Artificial Intelligence & Machine Learning - Task 1
